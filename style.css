@@ -1,0 +1,79 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.startMenu{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+.startMenu h1{
+    font-size: 80px;
+    line-height: 50px;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+}
+.startMenu p{
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+}
+.playBtn,
+.optionBtn{
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    border-radius: 3px;
+}
+.options{
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -180px;
+    z-index: 1000;
+    background-color: darkgrey;
+}
+.exitOptionBtn{
+    z-index: 1000;
+    width: 30px;
+    height: 30px;
+    margin-left: 170px;
+    border: none;
+    border-radius: 3px;
+}
+.saveOptionsBtn{
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 3px;
+}
+.options input{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.playBtn{
+    margin-bottom: 20px;
+}
+.fieldSize{
+    margin-top: 50px;
+    width: 320px;
+}
+.field{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40px);
+}
+button{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

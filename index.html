@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>saperGame</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<div class="container">
+  <div class="startMenu">
+    <h1>САПЕР</h1>
+    <button class="playBtn" onclick="startGameBtn()">ИГРАТЬ</button>
+    <button class="optionBtn" onclick="settingsBtnFunc()">НАСТРОЙКИ</button>
+    <div class="options" hidden="true">
+      <button class="exitOptionBtn" onclick="settingsBtnFunc()">X</button>
+      <div class="startMenu">
+        <p>Настройки</p>
+        <input type="number" class="fieldSizeInp" placeholder="Размер поля"
+               onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+        <input type="number" class="minesAmountInp" placeholder="Количество мин"
+               onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+        <button class="saveOptionsBtn" onclick="saveOption()">Сохранить</button>
+      </div>
+    </div>
+  </div>
+  <div class="fieldSize">
+    <div class="field"></div>
+  </div>
+</div>
+</body>
+</html>
